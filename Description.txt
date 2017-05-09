@@ -1,2 +1,5 @@
 Mini projet pour le cours de symfony 
 GLID2
+
+Vidéo for démo
+https://1drv.ms/v/s!AhBq8XW8ThyegrZBioj_fpUecnSKBw
