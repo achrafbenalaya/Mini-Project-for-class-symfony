@@ -1,0 +1,33 @@
+Commande:
+    type: entity
+    table: commande
+    indexes:
+        id_produit:
+            columns:
+                - id_produit
+        id_produit_2:
+            columns:
+                - id_produit
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        date:
+            type: datetime
+            nullable: false
+    manyToOne:
+        idProduit:
+            targetEntity: Produit
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_produit:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
